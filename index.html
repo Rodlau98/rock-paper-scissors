@@ -1,13 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./rps.js"></script>
-    <title>Document</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Sofia&display=swap" rel="stylesheet">
+    <script src="./javascript/rps.js" defer></script>
+    <title>Rock Paper Scissors</title>
 </head>
+
 <body>
-    
+    <div>
+        <h1>Rock Paper Scissors</h1>
+    </div>
+    <div class="choices">
+        <button id="rock" class="select"><img src="./images/rock.png" alt="rock"></button>
+        <button id="paper" class="select"><img src="./images/paper.png" alt="paper"></button>
+        <button id="scissors" class="select"><img src="./images/scissors.png" alt="scissors"></button>
+    </div>
+    <h2>First to five wins!</h2>
+    <div class="dom">
+        <div class="cards">
+            <div class="player"></div>
+            <div class="pc"></div>
+        </div>
+    </div>
+
+
 </body>
+
 </html>

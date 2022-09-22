@@ -1,0 +1,110 @@
+html {
+    background: url("../images/background.jpg");
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.choices {
+    gap: 2vw;
+}
+
+h1 {
+    font-size: 3vw;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2vw;
+    margin: 0;
+}
+
+p {
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+
+img {
+    width: 200px;
+}
+
+button {
+    background: url("../images/background.jpg");
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background 250ms ease-in-out, 
+                transform 150ms ease;
+    opacity: 50%;
+}
+
+button.retry {
+    transition: none;
+    opacity: 100%;
+}
+
+button.retry:hover {
+    box-shadow: none;
+    transform: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.5vw;
+}
+
+a:visited {
+    color: blue;
+}
+
+ button:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-10px);
+    opacity: 100%;
+}
+
+button:disabled {
+    cursor: initial;
+}
+
+.button:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+.dom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.gifs {
+    display: flex;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 50%;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
